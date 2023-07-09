@@ -7,16 +7,20 @@ postReq.addEventListener("click", function(){
     console.log(taskList.value),
     console.log(taskOrder.value),
     console.log(taskType.value)
-    fetch("https://jsonplaceholder.typicode.com/posts", {
-        method: 'POST',
-        body: JSON.stringify({
+    if (taskList.value.length <= 0){
+        console.log("error");
+    } else{
+        fetch("https://jsonplaceholder.typicode.com/posts", {
+            method: 'POST',
+            body: JSON.stringify({
             body: taskList.value,
             id: 1,
-        }),
-        headers: {
-            'Content-Type': 'application/json',
-        }
-    })
+            }),
+            headers: {
+                'Content-Type': 'application/json',
+            }
+        })
         .then(response => response.json())
         .then(json => console.log(json));
+    }
 });
