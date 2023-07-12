@@ -24,3 +24,16 @@ postReq.addEventListener("click", function(){
         .then(json => console.log(json));
     }
 });
+
+let refreshButton = document.querySelector("#refresh");
+let nextStepButton = document.querySelector("#check");
+
+refreshButton.addEventListener("click", function(){
+    fetch({
+
+    })
+});
+
+nextStepButton.addEventListener("click", function(){
+
+});
