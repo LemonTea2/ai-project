@@ -1,8 +1,6 @@
 let taskList3 = document.getElementById('taskDisplay');
 console.log(taskList3);
-let taskList = document.getElementById("tasks");
-let taskOrder = document.getElementById("order");
-let taskDisplay2 = '';
+taskDisplay2 = '';
 
 let okButton1 = document.getElementById('okButton');
 let refreshButton1 = document.getElementById('refreshButton');
