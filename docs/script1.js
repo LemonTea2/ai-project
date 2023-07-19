@@ -52,7 +52,7 @@ postReq.addEventListener("click", function(){
             method: 'POST',
             headers: {
                 'content-type': 'application/json',
-                Authorization: 'Bearer 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',
+                Authorization: 'Bearer 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',
             },
         }) .then((response) => {
             return response.json()
@@ -81,7 +81,7 @@ refreshButton1.addEventListener("click", function(){
         method: 'POST',
         headers: {
             'content-type': 'application/json',
-            Authorization: 'Bearer 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',
+            Authorization: 'Bearer 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',
         },
     }) .then((response) => {
         return response.json()
