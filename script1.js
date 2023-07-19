@@ -24,7 +24,7 @@ postReq.addEventListener("click", function(){
             method: 'POST',
             headers: {
                 'content-type': 'application/json',
-                Authorization: 'Bearer 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',
+                Authorization: 'Bearer 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',
             },
         }) .then((response) => {
             return response.json()
