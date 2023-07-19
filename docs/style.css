@@ -1,12 +1,13 @@
 h1{
     font-size: 100px;
-    margin-left: 30%;
-    margin-right: 30%;
+    margin-left: 35%;
+    margin-right: 35%;
 }
 
 p{
     font-size: 40px;
-    
+    margin-left: 22%;
+    margin-right: 20%;
 }
 
 #tasks{
@@ -21,19 +22,21 @@ p{
 #order{
     display: block;
     font-size: 175%;
-    margin-left: 40%;
+    margin-left: 39%;
     margin-right: 40%;
     margin-bottom: 5px
-}
-
-#type{
-    font-size: 175%;
-    display: inline;
-    margin-left: 41.5%;
-    margin-bottom: 3%;
 }
 
 #post1{
     font-size: 150%;
     border-radius: 15px;
+    margin-left: 48%;
+}
+
+#taskDisplay{
+    font-size: 1px;
+}
+
+#taskDisplay3{
+    font-size: 40px;
 }

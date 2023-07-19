@@ -1,13 +1,11 @@
 let taskList = document.getElementById("tasks");
 let taskOrder = document.getElementById("order");
-let taskType = document.getElementById("type");
 let postReq = document.getElementById('post1');
 let taskList1_2 = '';
 
 postReq.addEventListener("click", function(){
     console.log(taskList.value),
-    console.log(taskOrder.value),
-    console.log(taskType.value)
+    console.log(taskOrder.value);
     if (taskList.value.length <= 0){
         console.log("error");
     } else if(taskOrder.value == "noOrder"){
@@ -18,13 +16,13 @@ postReq.addEventListener("click", function(){
             body: JSON.stringify({
                 'model': 'text-davinci-003',
                 'prompt': 'Put the tasks: '+taskList.value+' in order from '+taskOrder.value,
-                'temperature': 1,
+                'temperature': 0.5,
                 'max_tokens': 20,
             }),
             method: 'POST',
             headers: {
                 'content-type': 'application/json',
-                Authorization: 'Bearer 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',
+                Authorization: 'Bearer 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',
             },
         }) .then((response) => {
             return response.json()
