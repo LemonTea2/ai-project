@@ -1,5 +1,5 @@
-let taskList3 = document.getElementById('taskDisplay');
-console.log(taskList3);
+let task3 = document.getElementById('taskDisplay');
+console.log(task3);
 taskDisplay2 = '';
 
 let okButton1 = document.getElementById('okButton');
@@ -27,5 +27,3 @@ refreshButton1.addEventListener("click", function(){
         document.getElementById('taskDisplay3').innerHTML = taskDisplay2;   
     });
 }); 
-
-
