@@ -7,27 +7,47 @@
     <link href="style.css" rel="stylesheet">
 </head>
 <body>
-    
+<div>
     <h1>Task Organizer</h1>
-    <p>The task organizer is an ai-based program that will help you
+    <p>
+        The task organizer is an ai-based program that will help you
         determine how you should organize your tasks. First, enter
         the tasks you want to have organized. Then, select the order you
         want them in. Finally, select what type of activities the tasks
-        consists of and press the OK button to move to the next step.
+        consists of and press the OK button to send a request. Follow
+        the prompts afterwards.
     </p>
-    <input id="tasks"></input>
+    <hr>
+    <textarea id="tasks"></textarea>
     <select id="order">
-        <option value="most_to_least_Important">Most-->Least important</option>
-        <option value="least_to_most_Important">Least-->Most important</option>
-        <option value="random_order">Random</option>
+        <option value="most to least Important">Most-->Least important</option>
+        <option value="least to most Important">Least-->Most important</option>
+        <option value="random order">Random</option>
         <option value="noOrder">How you input it</option>
     </select>
-    <button onclick="window.location.href = 'second_page';" id="post1" >OK</button>
-    <hr>
-    <p id="taskDisplay"></p>
-    <button id="okButton"></button>
-    <button id="refreshButton"></button>
+    <button id="post1">OK</button>
+</div> 
+<div>
+    <p id="2">Is this list OK?</p>
+    <p id="taskDisplay3">...</p>
+    <select id="order2">
+        <option value="most to least Important">Most-->Least important</option>
+        <option value="least to most Important">Least-->Most important</option>
+        <option value="random order">Random</option>
+        <option value="noOrder">How you input it</option>
+    </select>
+    <button id="okButton">This looks OK</button>
+    <button id="refreshButton">Refresh List</button>
+</div>
+<div>
+    <p id="3">
+        Here is the final list :)
+    </p>
+    <p id="finalList"></p>
+</div>
+<div>
+
+</div>
 </body>
     <script src="script1.js"></script>
-    <script src="script2.js"></script>
 </html>
