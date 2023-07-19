@@ -31,6 +31,7 @@ postReq.addEventListener("click", function(){
         document.getElementById("tasks").style.display = 'none';
         document.getElementById("order").style.display = 'none';
         document.getElementById("post1").style.display = 'none';
+        finalList1 = taskList;
     } 
     else{
         document.getElementById('okButton').style.display = '';
@@ -52,7 +53,7 @@ postReq.addEventListener("click", function(){
             method: 'POST',
             headers: {
                 'content-type': 'application/json',
-                Authorization: 'Bearer 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',
+                Authorization: 'Bearer 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',
             },
         }) .then((response) => {
             return response.json()
@@ -81,7 +82,7 @@ refreshButton1.addEventListener("click", function(){
         method: 'POST',
         headers: {
             'content-type': 'application/json',
-            Authorization: 'Bearer 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',
+            Authorization: 'Bearer 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',
         },
     }) .then((response) => {
         return response.json()
