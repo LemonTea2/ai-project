@@ -1,7 +1,7 @@
-let taskList = document.querySelector("#tasks");
-let taskOrder = document.querySelector("#order");
-let taskType = document.querySelector("#type");
-let postReq = document.querySelector("#post1");
+let taskList = document.getElementById("tasks");
+let taskOrder = document.getElementById("order");
+let taskType = document.getElementById("type");
+let postReq = document.getElementById('post1');
 let taskList1_2 = '';
 
 postReq.addEventListener("click", function(){
@@ -24,18 +24,17 @@ postReq.addEventListener("click", function(){
             method: 'POST',
             headers: {
                 'content-type': 'application/json',
-                Authorization: 'Bearer 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',
+                Authorization: 'Bearer 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',
             },
         }) .then((response) => {
             return response.json()
         }).then((data) => {
             console.log(data);
             console.log (data.choices[0].text);
-            let taskList1_2 = data.choices[0].text;
-            let taskList = document.getElementById('taskList');
-            taskList.setAttribute('value', taskList1_2);
+            taskList1_2 = data.choices[0].text
+            document.getElementById('taskDisplay').innerHTML = taskList1_2;   
         });
     }
 });
 
-let key = "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";
+let key = "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";
